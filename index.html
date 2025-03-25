@@ -7,17 +7,10 @@
     <title>MILKCOW Cafe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Lexend:wght@100..900&family=Titan+One&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: "Lexend", sans-serif;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -44,7 +37,7 @@
         }
 
         .top-navbar .nav-link {
-            color: #FE480B !important;
+            color: #b03006 !important;
         }
 
         .top-navbar .nav-link:hover {
@@ -65,9 +58,16 @@
             padding-left: 50px;
         }
 
-        @media (max-width: 980px) {
+        .top-section h1 {
+            font-family: "Borel", cursive;
+  font-weight: 400;
+  font-style: normal;
+            margin-top: 100px;
+        }
+
+        @media (max-width: 1000px) {
             .top-section {
-                padding-top: 200px; 
+                padding-top: 100px; 
             }
         }
         
@@ -113,19 +113,36 @@
             padding-bottom: 4%;
         }
 
-        .btn {
+        .btn-light {
             background-color: #CCF4F6;
             color: #447275;
             padding: 15px 30px;
-            font-size: 18px;
+            font-weight: 500;
+            font-size: 20px;
             border: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
 
-        .btn:hover {
-            background-color: #FF9673;
-            color: white;
+        .btn-light:hover {
+            background-color: #a5cbcd;
+            color: #365b5e;
+        }
+
+        .btn-dark {
+            background-color: #447275;
+            color: #CCF4F6;
+            padding: 15px 30px;
+            font-weight: 500;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-dark:hover {
+            background-color: #365b5e;
+            color: #a5cbcd;
         }
     </style>
 </head>
@@ -158,13 +175,13 @@
             <div class="row g-0">
                 <div class="col-md-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start justify-content-center text-white text-center text-lg-start p-4">
                     <div>
-                        <h1 class="fw-bold display-5 mb-4">All About Dessert</h1>
-                        <p class="fs-5 fw-semibold mb-4">Natural Milk Soft Serve</p>
-                        <p class="fs-5 fw-semibold mb-4">Coffee Made Fresh</p>
-                        <p class="fs-5 fw-semibold mb-4">Real Taiwanese Tea</p>
+                        <h1 class="fw-bold display-3 mb-4">all about dessert</h1>
+                        <p class="fs-4 fw-normal mb-4">Natural Milk Soft Serve</p>
+                        <p class="fs-4 fw-normal mb-4">Coffee Made Fresh</p>
+                        <p class="fs-4 fw-normal mb-4">Real Taiwanese Tea</p>
                         <div class="d-flex gap-4 justify-content-center justify-content-md-start mt-5">
-                            <button class="btn">View Menu</button>
-                            <button class="btn">Order Online</button>
+                            <button class="btn-light">View Menu</button>
+                            <button class="btn-light">Order Online</button>
                         </div>
                     </div>
                 </div>
@@ -229,7 +246,7 @@
                     </div>
                     <div class="flex-grow-1 d-flex flex-column align-items-center mb-3">
                         <p>Sign up for email updates!</p>
-                        <button class="btn">Subscribe</button>
+                        <button class="btn-dark">Subscribe</button>
                     </div>
                 </div>
             </div>
