@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MILKCOW Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar-brand {
+            font-family: 'Titan One', sans-serif;
+            font-size: 3rem;
+            font-weight: 400;
+            color: black !important;
+            letter-spacing: 1px;
+        }
+
+        .top-navbar {
+            background-color: #FFE8D0;
+            font-weight: 600;
+        }
+
+        .top-navbar .nav-link {
+            color: #FF7648 !important;
+        }
+
+        .top-navbar .nav-link:hover {
+            color: #FF9673 !important;
+        }
+
+        .logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .top-section {
+            background-color: #447275;
+            color: white;
+            display: flex;
+            align-items: center;
+            height: auto;
+            padding-left: 50px;
+        }
+
+        @media (max-width: 980px) {
+            .top-section {
+                padding-top: 200px; 
+            }
+        }
+        
+        .img-cover {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+
+        .middle-section {
+            background-color: #FFE8D0;
+            padding-top: 4%;
+            padding-bottom: 6%;
+        }
+
+        .img-product {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .img-small {
+            width: 100%;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .bottom-section {
+            background-color: #CCF4F6;
+            color: #447275;
+            font-weight: 600;
+            padding-top: 3%;
+            padding-bottom: 4%;
+        }
+
+        .btn {
+            background-color: #FF7648;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #FF9673;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg top-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="">
+                <img src="icons/logo.png" alt="MILKCOW Logo" class="logo me-2">
+                MILKCOW
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Catering</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Franchise</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section top-section">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-md-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start justify-content-center text-white text-center text-lg-start p-4">
+                    <div>
+                        <h1 class="fw-bold display-5 mb-4">All About Dessert</h1>
+                        <p class="fs-5 fw-semibold mb-4">Natural Milk Soft Serve</p>
+                        <p class="fs-5 fw-semibold mb-4">Coffee Made Fresh</p>
+                        <p class="fs-5 fw-semibold mb-4">Real Taiwanese Tea</p>
+                        <div class="d-flex gap-4 justify-content-center justify-content-md-start mt-5">
+                            <button class="btn">View Menu</button>
+                            <button class="btn">Order Online</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex p-0">
+                    <img src="images/cover.png" alt="Image of Ice Cream Sundae" class="img-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section middle-section text-center">
+        <div class="container">
+            <div class="row justify-content-center g-3">
+                <div class="col-auto mx-2">
+                    <img src="icons/instagram.png" class="img-small" alt="Instagram Logo">
+                </div>
+                <div class="col-auto mx-2">
+                    <img src="icons/facebook.png" class="img-small" alt="Facebook Logo">
+                </div>
+            </div>
+
+            <div class="container mt-4">
+                <div class="row g-3">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="images/image1.png" class="img-product" alt="Image of Boba">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="images/image2.png" class="img-product" alt="Image of Galaxy Drink">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="images/image3.png" class="img-product" alt="Image of Ice Cream Sundae">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="images/image4.png" class="img-product" alt="Image of Boba">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="images/image5.png" class="img-product" alt="Image  of Ice Cream Sundae">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="images/image6.png" class="img-product" alt="Image of Two Ice Cream Sundaes">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bottom-section text-center">
+        <div class="container">
+            <div class="container mt-4">
+                <div class="d-flex flex-column flex-md-row justify-content-between text-center align-items-start gap-4">
+                    <div class="flex-grow-1 d-flex flex-column align-items-center mb-3">
+                        <p class="m-1">240 Hawthorn Village Commons</p>
+                        <p class="m-1">Vernon Hills, IL, 60061</p>
+                    </div>
+                    <div class="flex-grow-1 d-flex flex-column align-items-center mb-3">
+                        <p class="m-1">Hours:</p>
+                        <p class="m-1">Mon: 10am-8pm</p>
+                        <p class="m-1">Tue-Thu: 10am-2pm, 3:30pm-8pm</p>
+                        <p class="m-1">Fri: 10am-8pm</p>
+                        <p class="m-1">Sat: 12pm-9pm</p>
+                        <p class="m-1">Sun: 1pm-8pm</p>
+                    </div>
+                    <div class="flex-grow-1 d-flex flex-column align-items-center mb-3">
+                        <p>Sign up for email updates!</p>
+                        <button class="btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
